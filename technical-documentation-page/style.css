@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #555;
+  color: #f1f1f1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  overflow: auto;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  overflow: auto;
+}
+
+.link > a {
+  display: block;
+  text-decoration: none;
+  color: #f1f1f1;
+  padding: 10px;
+}
+
+#main-doc .main-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+  margin-left: 220px;
+}
+.main-section > header {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+li {
+  padding: 5px;
+}
+
+p {
+  padding: 10px;
+}
+
+code {
+  background-color: #807d7d;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    background-color: #666;
+  }
+
+  #navbar .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 200px;
+    width: 100%;
+    margin-left: 30px;
+    padding-left: 10px;
+  }
+
+  #navbar header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #f1f1f1 1px solid;
+    font-size: 1.8rem;
+  }
+
+  #navbar a {
+    margin: 7px;
+    text-decoration: none;
+    color: #f1f1f1;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+    overflow: auto;
+  }
+
+  .link > a {
+    display: flex;
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 10px;
+  }
+
+  #main-doc .main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    margin-left: 10px;
+    width: 95%;
+  }
+}
